@@ -1,0 +1,65 @@
+# Usability Testing Tool (Streamlit)
+
+This project is a Streamlit-based web app for running small-scale usability tests on the Stella Magna application. It walks a facilitator and participant through:
+
+- Consent collection
+- Demographic questionnaire
+- Task execution with timing and success tracking
+- Exit questionnaire (satisfaction and difficulty)
+- A summary report with tables and a bar chart of average scores
+
+All responses are saved as CSV files under a `data/` folder for later analysis.
+
+## Requirements
+
+This app uses the following key Python modules:
+
+- `streamlit` – to build and serve the web app
+- `altair` – to render the bar chart visualization
+- `pandas` – to handle CSV reading and writing
+- Standard library modules: `os` and `time`
+
+If you are using an IDE like PyCharm, you can install the missing modules via the **Python Packages** tool:
+
+1. Open the project in PyCharm.
+2. Look for the **Python Packages** icon on the lower left sidebar.
+3. Search for `streamlit` and install it.
+4. Search for `altair` and install it.
+5. If needed, also ensure `pandas` is installed.
+
+## Running the App
+
+1. Open a terminal in your project’s root directory (the folder that contains `app.py`).
+2. Run:
+
+   ```bash
+   streamlit run app.py
+   ```
+
+   If your file has a different name, replace `app.py` with that filename:
+
+   ```bash
+   streamlit run your_app_name.py
+   ```
+
+3. Streamlit will print a **Local URL** (for example, `http://localhost:8501`).
+4. A tab should automatically open in your browser, but you can also click on the terminal link to open the app in a new browser tab.
+
+## Making Changes
+
+- Edit the code in `app.py` as needed (for example, to add new tasks or adjust wording).
+- Save your changes in the IDE.
+- Return to the browser tab where the app is open and refresh the page.
+- Streamlit will re-run the script and display the latest iteration of your app.
+
+## Data Files
+
+When you run the app, it will create a `data/` folder (if it does not already exist) and write CSV files for:
+
+- `consent_data.csv`
+- `demographic_data.csv`
+- `task_data.csv`
+- `exit_data.csv`
+
+Each file contains one row per submission, including a timestamp. These can be opened in Excel, a text editor, or analyzed with Python.
+
