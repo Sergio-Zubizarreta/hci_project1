@@ -1,0 +1,4 @@
+timestamp,task_id,task_name,success,duration_seconds,filters_used,difficulty,notes
+2026-07-26 19:30:13,1,Task 1 – Find a popular add-on (>= 3000 stars),Completed,18.614198684692383,,1,
+2026-07-26 19:39:35,2,Task 2 – Filter to recently updated Python add-ons,Completed,31.21947479248047,Toggled 'Only show add-ons updated in the last 12 months'; Used 'Programming language' multiselect,2,
+2026-07-26 19:44:35,3,Task 3 – Sort by most recently updated add-ons,Completed,21.692579746246338,Changed 'Sort by' option,2,
